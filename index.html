@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Kartta</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="assets/js/map.js"></script>
+        <style>
+            #map-canvas {
+                height: 600px;
+                width: 95%;
+                margin: 0 auto;
+                padding: 0;
+            }
+            #infobox {
+                border: 0px none;
+                position: absolute;
+                background-image: url(assets/img/texture-white.png);
+                overflow: hidden;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                max-width: 90%;
+            }
+            #infobox .norppaimage {
+                width: 65%;
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                top: -40px;
+            }
+
+            #infobox .greeting {
+                margin: 10px;
+                border: 2px solid #D8D8D8;
+                padding: 140px 20px 20px;
+                overflow: auto;
+                position: relative;
+                text-align: center;
+            }
+
+            #infobox h2 {
+                font-size: 20px;
+                font-size: 1.85em;
+                margin: 10px 0;
+            }
+
+            #infobox .greeting span {
+                display: block;
+            }
+
+            #infobox .greeting span:before {
+                color: #ccc;
+                content: '“';
+                content: open-quote;
+                font-size: 4em;
+                line-height: 0.1em;
+                margin-right: 0.25em;
+                vertical-align: -0.4em;
+            }
+
+            #infobox .greeting span:after {
+                color: #ccc;
+                content: close-quote;
+                font-size: 4em;
+                line-height: 0.1em;
+                margin-left: 0.25em;
+                vertical-align: -0.6em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map-canvas"></div>
+    </body>
+</html>
